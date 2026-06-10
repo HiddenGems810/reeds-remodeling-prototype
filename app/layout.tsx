@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://reedsremodeling.com"),
+  metadataBase: new URL("https://reeds-remodeling-prototype.vercel.app"),
   title: {
     template: "%s | Reeds Remodeling",
     default: "Reeds Painting and Remodeling Service",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Reeds Painting and Remodeling Service",
     description: "Premium residential painting and remodeling services in Saginaw Township, MI.",
-    url: "https://reedsremodeling.com",
+    url: "https://reeds-remodeling-prototype.vercel.app",
     siteName: "Reeds Remodeling",
     locale: "en_US",
     type: "website",

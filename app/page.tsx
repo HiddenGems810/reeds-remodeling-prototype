@@ -16,9 +16,9 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
     "name": "Reeds Painting and Remodeling Service",
-    "image": "https://reedsremodeling.com/opengraph-image.png",
-    "@id": "https://reedsremodeling.com",
-    "url": "https://reedsremodeling.com",
+    "image": "https://reeds-remodeling-prototype.vercel.app/opengraph-image.png",
+    "@id": "https://reeds-remodeling-prototype.vercel.app",
+    "url": "https://reeds-remodeling-prototype.vercel.app",
     "telephone": "+15551234567",
     "address": {
       "@type": "PostalAddress",
