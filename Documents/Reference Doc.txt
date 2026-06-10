@@ -1,0 +1,600 @@
+# Reeds Painting and Remodeling Service — Design Asset Reference Pack
+
+## Goal
+
+Before building the frontend prototype, create a complete design asset direction for **Reeds Renovation Concierge**, the no-backend booking-app prototype for **Reeds Painting and Remodeling Service**.
+
+The visual system should feel like:
+
+* Apple-level cleanliness
+* Awwwards-style composition
+* premium local craftsmanship
+* guided home renovation planning
+* polished project concierge, not a basic contractor form
+
+Do not copy any reference source directly. Deconstruct principles, then rebuild them into a custom Reeds-specific system.
+
+---
+
+# 1. Core Visual Thesis
+
+Create a visual world around this idea:
+
+**“Raw home surfaces becoming finished, trusted spaces.”**
+
+The interface should use:
+
+* paint swatches
+* blueprint lines
+* masked before/after reveals
+* wall texture
+* plaster/card surfaces
+* refined contractor measurement marks
+* room-transformation panels
+* clean project-summary cards
+* tactile but minimal material details
+
+Avoid:
+
+* generic contractor stock-photo websites
+* cheap orange/blue handyman colors
+* overdone AI gradients
+* floating blobs
+* fake glassmorphism
+* dark-mode-only SaaS styling
+* template-looking shadcn cards
+
+---
+
+# 2. Moodboard Direction
+
+## Moodboard Name
+
+**Warm Precision Renovation**
+
+## Keywords
+
+* warm white plaster
+* charcoal ink
+* evergreen trust
+* aged brass accent
+* soft wall texture
+* clean blueprint grid
+* masking tape lines
+* premium home finish
+* modern editorial spacing
+* tactile material panels
+* guided project intake
+* before/after transformation
+
+## Emotional Target
+
+The customer should feel:
+
+* “This company is organized.”
+* “They will respect my home.”
+* “They understand the project before asking for money.”
+* “This feels more premium than other local contractors.”
+* “The booking process is easy.”
+
+---
+
+# 3. Color Asset System
+
+Create CSS variables / design tokens for these roles.
+
+## Primary Palette
+
+* Plaster White: warm off-white background
+* Soft Putty: secondary neutral background
+* Charcoal Ink: primary text
+* Deep Evergreen: trust / brand anchor
+* Aged Brass: premium accent
+* Clay Terracotta: warm highlight
+* Fresh Primer: pale surface color
+* Clean Line Gray: borders and dividers
+
+## Token Names
+
+```css
+--color-background: ;
+--color-surface: ;
+--color-surface-elevated: ;
+--color-text-primary: ;
+--color-text-secondary: ;
+--color-border-subtle: ;
+--color-border-strong: ;
+--color-brand-primary: ;
+--color-brand-accent: ;
+--color-cta: ;
+--color-success: ;
+--color-warning: ;
+--color-error: ;
+```
+
+## Palette Behavior
+
+* Background should feel bright and clean, not sterile.
+* CTA should be high-contrast and unmistakable.
+* Accent color should be used sparingly for premium effect.
+* Avoid excessive gradients.
+* Use texture and spacing more than color noise.
+
+---
+
+# 4. Typography Asset System
+
+Use a two-font system.
+
+## Recommended Pairing Option A
+
+* Display: Geist / editorial geometric display style
+* Body: Inter / clean UI sans
+
+## Recommended Pairing Option B
+
+* Display: Playfair Display or a refined editorial serif
+* Body: Geist or Inter
+
+## Typography Rules
+
+* Hero headline should feel confident and architectural.
+* Body copy must be highly readable.
+* Use clamp-based responsive type.
+* Do not use ultra-light body text.
+* Avoid centered long paragraphs.
+* Use type hierarchy before relying on cards.
+
+## Type Tokens
+
+```css
+--font-display: ;
+--font-body: ;
+
+--type-hero: clamp(...);
+--type-h1: clamp(...);
+--type-h2: clamp(...);
+--type-h3: clamp(...);
+--type-body: ;
+--type-small: ;
+--type-caption: ;
+```
+
+---
+
+# 5. Logo / Brand Mark Asset Direction
+
+If no official logo assets are provided, create a temporary refined wordmark system.
+
+## Temporary Wordmark
+
+Text: **Reeds**
+Subtext: **Painting & Remodeling Service**
+
+## Mark Concepts
+
+Create 3 optional SVG logo-mark concepts:
+
+1. **Paint Stroke + House Frame**
+
+   * minimal house roofline with controlled brush stroke
+
+2. **R Monogram + Blueprint Corner**
+
+   * architectural “R” with measurement-line detail
+
+3. **Swatch Stack Mark**
+
+   * layered paint swatches forming a subtle home silhouette
+
+Rules:
+
+* SVG only
+* no cartoon house icons
+* no cheap roller/brush clipart
+* no gradients unless subtle and brand-token based
+* must work at favicon size
+
+---
+
+# 6. Icon Asset Direction
+
+Use a clean line-icon system.
+
+## Icon Style
+
+* 1.75px or 2px stroke
+* rounded caps
+* minimal interior detail
+* custom-looking where possible
+* consistent optical size
+
+## Icons Needed
+
+* Interior painting
+* Exterior painting
+* Cabinet refinishing
+* Drywall repair
+* Remodeling
+* Flooring / trim
+* Project timeline
+* Estimate request
+* Property type
+* Surface condition
+* Budget range
+* Calendar / timing
+* Contact
+* Success / confirmation
+
+## Icon Source Direction
+
+Use lucide-react, Tabler Icons, or custom SVGs as the base, then modify stroke weight, container treatment, and naming so the site does not look like default icon-library output.
+
+---
+
+# 7. Texture / Material Assets
+
+Create subtle lightweight textures as CSS or optimized SVG/PNG overlays.
+
+## Required Textures
+
+1. **Fine Wall Plaster**
+
+   * extremely subtle
+   * low opacity
+   * used on hero and large backgrounds
+
+2. **Blueprint Grid**
+
+   * thin measurement grid
+   * used behind booking builder and process sections
+
+3. **Paint Swatch Surface**
+
+   * layered neutral panels
+   * used for service cards and transitions
+
+4. **Masking Tape Line**
+
+   * small accent detail
+   * used as dividers or section labels
+
+5. **Brushed Brass Accent**
+
+   * optional tiny accent texture for premium highlights
+
+Rules:
+
+* Must be lightweight.
+* Do not use heavy background images.
+* Do not create noisy textures that reduce text readability.
+* Use CSS gradients/SVG patterns where possible.
+
+---
+
+# 8. Photography / Placeholder Asset Direction
+
+Until client photos are provided, use premium placeholders that do not pretend to be real proof.
+
+## Placeholder Categories
+
+* clean interior wall
+* painting prep
+* cabinet transformation
+* exterior paint refresh
+* bathroom remodel
+* before/after wall repair
+* tools arranged cleanly
+* paint swatches and material samples
+
+## Placeholder Labeling
+
+Use honest labels:
+
+* “Client project photo placeholder”
+* “Before/after image area”
+* “Reeds project gallery pending client assets”
+
+Do not use fake testimonials or fake before/after claims.
+
+## Image Treatment
+
+* large radius but not overly rounded
+* subtle border
+* editorial crop
+* consistent aspect ratios
+* before/after reveal mask
+* no generic smiling-contractor stock clichés
+
+---
+
+# 9. Component Library References
+
+Use these as inspiration sources only. Do not paste components without redesigning them.
+
+## shadcn/ui
+
+Use for:
+
+* Button
+* Input
+* Textarea
+* Select
+* Accordion
+* Dialog / Drawer
+* Progress
+* Card
+* Badge
+
+Rule:
+Every primitive must be restyled through Reeds tokens, not default shadcn styling.
+
+## Magic UI
+
+Use for:
+
+* subtle animated border
+* hero text reveal
+* marquee if needed for service tags
+* animated beam or shine effect only if restrained
+* premium CTA treatment
+
+Do not overuse effects.
+
+## Aceternity UI
+
+Use for:
+
+* spotlight section
+* sticky scroll reveal
+* card hover effects
+* background beams if heavily toned down
+* moving border only if performance-safe
+
+Do not use intense SaaS/neon defaults.
+
+## React Bits
+
+Use for:
+
+* animated content reveal
+* text mask
+* scroll reveal
+* lightweight interactive effects
+
+Do not import excessive animation for simple UI.
+
+## Radix UI
+
+Use for:
+
+* accessible dialogs
+* tabs
+* accordion
+* select/dropdown behavior
+* focus management
+
+---
+
+# 10. Specific Creative Components to Build
+
+## A. Hero Transformation Panel
+
+A large hero visual showing layered room panels moving from unfinished to finished.
+
+States:
+
+* initial: raw surface / blueprint grid
+* scroll/hover: finished plaster wall / clean interior panel
+* reduced motion: static layered panel
+
+## B. Project Brief Builder
+
+A polished multi-step intake system.
+
+Visual details:
+
+* left: step form
+* right: sticky project summary card
+* progress bar as “project planning meter”
+* selected service chips
+* material-card styling
+
+## C. Paint Swatch Service Cards
+
+Each service card should look like a premium paint/material swatch.
+
+States:
+
+* default
+* hover
+* selected
+* disabled
+* focus-visible
+
+## D. Before / After Reveal
+
+Use a draggable or hover/click reveal interaction.
+
+Fallback:
+
+* static side-by-side cards on mobile or reduced-motion mode
+
+## E. Process Timeline
+
+Use blueprint measurement marks and numbered steps.
+
+Desktop:
+
+* horizontal timeline
+
+Mobile:
+
+* stacked cards with progress line
+
+## F. Trust Proof Wall
+
+Use calm, editorial proof cards.
+
+Include:
+
+* testimonial placeholders
+* process values
+* craftsmanship principles
+* contact reassurance
+
+No fake claims.
+
+## G. Final CTA Panel
+
+A clean closing section with large type, warm surface, and high-contrast CTA.
+
+---
+
+# 11. Animation Asset Direction
+
+Motion signature:
+
+**Editorial Craft Motion**
+
+Use:
+
+* masked headline reveal
+* slow material-panel entrance
+* subtle service-card lift
+* booking step slide/fade
+* progress fill animation
+* before/after reveal
+* section label line-draw animation
+
+Avoid:
+
+* scroll-jacking
+* constant parallax
+* huge WebGL
+* cursor gimmicks
+* animation that hides copy
+* motion on every element
+
+Timing:
+
+* microinteractions: 120–220ms
+* cards/forms: 180–300ms
+* section reveals: 350–700ms
+* hero motion: under 1600ms
+* always respect reduced motion
+
+---
+
+# 12. Section Transition Concepts
+
+Create smooth section transitions between:
+
+## Hero → Services
+
+Paint swatch panels slide into service cards.
+
+## Services → Builder
+
+Selected service chips visually feed into the project brief builder.
+
+## Builder → Before/After
+
+Project brief card transitions into transformation preview.
+
+## Before/After → Process
+
+Reveal slider line becomes the timeline line.
+
+## Process → CTA
+
+Timeline resolves into final consultation CTA.
+
+These transitions should be conceptual, not heavy. The site must still feel fast.
+
+---
+
+# 13. Asset Folder Structure
+
+Create this structure:
+
+```txt
+public/
+  assets/
+    reeds/
+      brand/
+        reeds-wordmark.svg
+        reeds-mark-option-1.svg
+        reeds-mark-option-2.svg
+        reeds-mark-option-3.svg
+      textures/
+        plaster-texture.svg
+        blueprint-grid.svg
+        paint-swatch-pattern.svg
+        masking-tape-line.svg
+      icons/
+        interior-painting.svg
+        exterior-painting.svg
+        cabinet-refinishing.svg
+        drywall-repair.svg
+        remodeling.svg
+        flooring-trim.svg
+        estimate.svg
+        calendar.svg
+        property.svg
+        surface-condition.svg
+        success.svg
+      placeholders/
+        interior-before.webp
+        interior-after.webp
+        cabinet-before.webp
+        cabinet-after.webp
+        exterior-before.webp
+        exterior-after.webp
+```
+
+If real images are unavailable, use abstract placeholders and label them honestly.
+
+---
+
+# 14. Design System Deliverable
+
+Before implementation, return a style system summary:
+
+```md
+## Visual Thesis
+
+## Moodboard Keywords
+
+## Color Tokens
+
+## Typography Tokens
+
+## Layout Grid
+
+## Texture System
+
+## Icon System
+
+## Motion System
+
+## Component Inventory
+
+## Asset Folder Plan
+
+## Risks / What Not To Overdo
+```
+
+---
+
+# 15. Quality Bar
+
+The design assets pass only if:
+
+* Reeds looks premium but still approachable.
+* The booking flow feels custom, not template-based.
+* The visual system clearly belongs to painting/remodeling.
+* The interface is clean enough for Apple-style trust.
+* The creative components feel intentional, not pasted in.
+* The site remains fast, accessible, and mobile-first.
+* No fake proof, fake reviews, or unverified claims are used.
