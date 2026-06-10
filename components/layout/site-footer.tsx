@@ -34,7 +34,7 @@ export function SiteFooter() {
               </a>
               <span className="flex items-start gap-3 leading-relaxed">
                 <MapPin className="h-5 w-5 shrink-0 mt-0.5 text-primary" /> 
-                123 Remodel Way,<br />Craftsman City, ST 12345
+                Saginaw Township,<br />MI 48603
               </span>
             </div>
           </div>
