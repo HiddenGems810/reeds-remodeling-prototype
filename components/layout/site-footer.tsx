@@ -1,65 +1,98 @@
 import * as React from "react";
 import Link from "next/link";
-import { PaintRoller, MapPin, Phone, Mail } from "lucide-react";
+import { PaintRoller, MapPin, Phone, Mail, ArrowUpRight } from "lucide-react";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-transparent py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-12 md:grid-cols-4">
-          <div className="flex flex-col gap-6 md:col-span-2">
-            <Link href="/" className="flex items-center gap-4">
-              <div className="bg-primary text-primary-foreground p-2 rounded-sm shadow-sm">
+    <footer className="bg-[#0f2420] text-[#fdfbf7] py-16 md:py-24 relative overflow-hidden border-t border-[#1a3632]">
+      {/* Decorative large logo outline */}
+      <div className="absolute -bottom-32 -right-32 text-white/[0.03] pointer-events-none transform -rotate-12">
+         <PaintRoller className="w-[500px] h-[500px]" />
+      </div>
+
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="grid gap-16 md:gap-12 md:grid-cols-12 mb-20">
+          
+          {/* Brand Column */}
+          <div className="flex flex-col gap-8 md:col-span-5 pr-4 md:pr-12">
+            <Link href="/" className="flex items-center gap-4 group w-fit">
+              <div className="bg-[#d97706] text-white p-2.5 rounded-xl transition-transform group-hover:scale-105 shadow-[0_0_20px_rgba(217,119,6,0.4)]">
                 <PaintRoller className="h-6 w-6" />
               </div>
               <div className="flex flex-col">
-                <span className="font-display text-xl md:text-2xl font-bold tracking-tight text-primary leading-tight">
-                  Reeds Painting and Remodeling Service
+                <span className="font-display text-2xl font-bold tracking-tight text-white leading-tight">
+                  Reeds Remodeling
+                </span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-white/50">
+                  Premium Home Services
                 </span>
               </div>
             </Link>
-            <p className="max-w-md text-base text-muted-foreground leading-relaxed">
-              Premium residential painting and remodeling services. We transform your raw spaces into finished, beautiful homes. Painting • Remodeling • Surface Repair • Project Planning.
+            <p className="text-base text-white/70 leading-relaxed font-medium">
+              We transform your raw spaces into finished, beautiful homes with an obsessive focus on craftsmanship, communication, and clean project management.
             </p>
           </div>
           
-          <div className="flex flex-col gap-5">
-            <h4 className="font-display text-lg font-bold text-primary">Contact Reeds</h4>
-            <div className="flex flex-col gap-4 text-sm text-muted-foreground">
-              <a href="tel:+1" className="flex items-center gap-3 hover:text-accent transition-colors font-medium">
-                <Phone className="h-5 w-5 text-primary" /> (555) 123-4567
+          {/* Contact Column */}
+          <div className="flex flex-col gap-6 md:col-span-4">
+            <h4 className="font-display text-lg font-bold text-white flex items-center gap-2">
+              <span className="w-8 h-px bg-[#d97706]/50 inline-block"></span> Contact
+            </h4>
+            <div className="flex flex-col gap-5 text-sm text-white/80">
+              <a href="tel:+1" className="flex items-center gap-4 hover:text-[#d97706] transition-colors font-medium group">
+                <div className="bg-white/5 p-2 rounded-lg group-hover:bg-[#d97706]/10 transition-colors">
+                  <Phone className="h-4 w-4 text-[#d97706]" />
+                </div>
+                (555) 123-4567
               </a>
-              <a href="mailto:estimates@reedspainting.com" className="flex items-center gap-3 hover:text-accent transition-colors font-medium">
-                <Mail className="h-5 w-5 text-primary" /> estimates@reedspainting.com
+              <a href="mailto:estimates@reedspainting.com" className="flex items-center gap-4 hover:text-[#d97706] transition-colors font-medium group">
+                <div className="bg-white/5 p-2 rounded-lg group-hover:bg-[#d97706]/10 transition-colors">
+                  <Mail className="h-4 w-4 text-[#d97706]" />
+                </div>
+                estimates@reedspainting.com
               </a>
-              <span className="flex items-start gap-3 leading-relaxed">
-                <MapPin className="h-5 w-5 shrink-0 mt-0.5 text-primary" /> 
-                Saginaw Township,<br />MI 48603
+              <span className="flex items-start gap-4 leading-relaxed font-medium">
+                <div className="bg-white/5 p-2 rounded-lg">
+                  <MapPin className="h-4 w-4 shrink-0 text-[#d97706]" />
+                </div>
+                <div>Saginaw Township,<br />MI 48603</div>
               </span>
             </div>
           </div>
           
-          <div className="flex flex-col gap-5">
-            <h4 className="font-display text-lg font-bold text-primary">Legal & Trust</h4>
-            <div className="flex flex-col gap-3 text-sm text-muted-foreground font-medium">
-              <Link href="#" className="hover:text-accent transition-colors">Privacy Policy</Link>
-              <Link href="#" className="hover:text-accent transition-colors">Terms of Service</Link>
-              <div className="mt-4 pt-4 border-t border-border-strong text-xs opacity-80 leading-relaxed">
-                <p className="font-semibold text-primary">Fully Licensed & Insured</p>
-                <p>State License #123456789</p>
-                <p className="mt-2 text-accent italic">(Placeholder License Info)</p>
+          {/* Legal Column */}
+          <div className="flex flex-col gap-6 md:col-span-3">
+            <h4 className="font-display text-lg font-bold text-white flex items-center gap-2">
+              <span className="w-8 h-px bg-[#d97706]/50 inline-block"></span> Legal & Trust
+            </h4>
+            <div className="flex flex-col gap-4 text-sm text-white/70 font-medium">
+              <Link href="#" className="hover:text-[#d97706] transition-colors flex items-center gap-1 group">
+                Privacy Policy <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+              <Link href="#" className="hover:text-[#d97706] transition-colors flex items-center gap-1 group">
+                Terms of Service <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+              <div className="mt-6 pt-6 border-t border-white/10 text-xs opacity-80 leading-relaxed bg-white/5 p-4 rounded-xl">
+                <p className="font-bold text-white uppercase tracking-wider mb-1 flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Fully Licensed & Insured
+                </p>
+                <p className="font-mono text-white/50">State License #123456789</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="mt-16 flex flex-col items-center justify-between border-t border-border-strong pt-8 md:flex-row gap-4">
-          <p className="text-sm font-medium text-muted-foreground">
+        {/* Bottom Bar */}
+        <div className="flex flex-col items-center justify-between border-t border-white/10 pt-8 md:flex-row gap-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-white/40">
             &copy; {new Date().getFullYear()} Reeds Painting and Remodeling Service. All rights reserved.
           </p>
-          <p className="text-sm font-semibold text-accent bg-accent/10 px-3 py-1 rounded-sm border border-accent/20">
-            Frontend Product Demo
-          </p>
+          <div className="flex items-center gap-3">
+             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+             <p className="text-[10px] font-bold uppercase tracking-widest text-[#d97706] bg-[#d97706]/10 px-3 py-1.5 rounded-md border border-[#d97706]/20">
+               Frontend Product Demo
+             </p>
+          </div>
         </div>
       </div>
     </footer>
