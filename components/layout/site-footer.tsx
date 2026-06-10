@@ -66,10 +66,10 @@ export function SiteFooter() {
               <span className="w-8 h-px bg-[#d97706]/50 inline-block"></span> Legal & Trust
             </h4>
             <div className="flex flex-col gap-4 text-sm text-white/70 font-medium">
-              <Link href="#" className="hover:text-[#d97706] transition-colors flex items-center gap-1 group">
+              <Link href="/privacy" className="hover:text-[#d97706] transition-colors flex items-center gap-1 group">
                 Privacy Policy <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
               </Link>
-              <Link href="#" className="hover:text-[#d97706] transition-colors flex items-center gap-1 group">
+              <Link href="/terms" className="hover:text-[#d97706] transition-colors flex items-center gap-1 group">
                 Terms of Service <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
               </Link>
               <div className="mt-6 pt-6 border-t border-white/10 text-xs opacity-80 leading-relaxed bg-white/5 p-4 rounded-xl">
