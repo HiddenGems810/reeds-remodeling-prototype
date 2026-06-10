@@ -74,7 +74,7 @@ export function SiteFooter() {
               </Link>
               <div className="mt-6 pt-6 border-t border-white/10 text-xs opacity-80 leading-relaxed bg-white/5 p-4 rounded-xl">
                 <p className="font-bold text-white uppercase tracking-wider mb-1 flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Fully Licensed & Insured
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span> Fully Licensed & Insured
                 </p>
                 <p className="font-mono text-white/50">State License #123456789</p>
               </div>
